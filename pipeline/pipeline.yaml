@@ -47,9 +47,11 @@ spec:
     - name: sonarqube
       params:
         - name: SONAR_HOST_URL
-          value: 'https://sonarcloud.io'
+          value: 'http://sonarqube-java-argo.apps.cluster-tjb85.tjb85.sandbox2921.opentlc.com'
         - name: SONAR_PROJECT_KEY
-          value: sample-dotnetcore-ex
+          value: sample-spring-boot-kotlin
+        - name: SONAR_TOKEN
+          value: 'sqa_a72947bc656d983f80d6c2498dcf76648da2616b'
       runAfter:
         - junit-tests
       taskRef:
