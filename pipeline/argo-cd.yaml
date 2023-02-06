@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sample-spring-kotlin
+spec:
+  destination:
+    name: ''
+    namespace: java-argo
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: cicd/apps/sample-spring-kotlin
+    repoURL: 'https://github.com/piomin/sample-spring-kotlin-microservice.git'
+    targetRevision: HEAD
+  project: default
