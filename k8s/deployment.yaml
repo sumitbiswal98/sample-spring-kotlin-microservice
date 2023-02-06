@@ -16,3 +16,5 @@ spec:
         image: quay.io/sumitbiswal/java-argo
         ports:
         - containerPort: 8080
+
+
